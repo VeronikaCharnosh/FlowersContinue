@@ -1,15 +1,16 @@
 package edu.ucu.edu.apps.item;
 
-public class BasketDecorater extends ItemDecorator{
+public class BasketDecorater extends ItemDecorator {
     private Item item;
     @Override
-    public String getDecription(){
+    public String getDecription() {
         return item.getDecription();
     }
 
-    @Override
+    
+    private int mg = 4;
     public double getPrice() {
-        return 4 + item.getPrice();
+        return mg + item.getPrice();
     }
     
 }

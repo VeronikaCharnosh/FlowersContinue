@@ -1,5 +1,5 @@
 package edu.ucu.edu.apps.payment;
 
-public class PayPalPaymentStrategy extends Payment{
+public class PayPalPaymentStrategy extends Payment {
     
 }

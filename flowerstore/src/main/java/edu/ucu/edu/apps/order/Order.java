@@ -12,15 +12,15 @@ import edu.ucu.edu.apps.payment.Payment;
 @Getter @Setter @AllArgsConstructor
 public class Order {
     private List<Item> itemsList;
-    private Payment payment;
-    private Delivery delivery;
+    private Payment paymentt;
+    private Delivery deliveryy;
 
     public void setPaymentStrategy(Payment payment) {
-        this.payment = payment;
+        this.paymentt = payment;
     }
 
     public void setDeliveryStrategy(Delivery delivery) {
-        this.delivery = delivery;
+        this.deliveryy = delivery;
     }
 
     public void addItem(Item item) {
@@ -41,7 +41,7 @@ public class Order {
 
     public void processOrder() {
         double totalPrice = calculateTotalPrice();
-        payment.pay(totalPrice);
-        delivery.deliver(itemsList);
+        paymentt.pay(totalPrice);
+        deliveryy.deliver(itemsList);
     }
 }

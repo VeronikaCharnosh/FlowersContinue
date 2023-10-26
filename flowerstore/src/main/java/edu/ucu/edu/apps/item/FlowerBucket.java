@@ -19,7 +19,7 @@ public class FlowerBucket extends Item {
         flowerPacks.add(flowerPack);
     }
 
-    public void searchFlower(){
+    public void searchFlower() {
         
     }
 }

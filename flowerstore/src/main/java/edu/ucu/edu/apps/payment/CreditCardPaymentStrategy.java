@@ -1,5 +1,5 @@
 package edu.ucu.edu.apps.payment;
 
-public class CreditCardPaymentStrategy extends Payment{
+public class CreditCardPaymentStrategy extends Payment {
     
 }

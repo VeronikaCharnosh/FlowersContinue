@@ -12,8 +12,12 @@ import edu.ucu.edu.apps.flowerstore.FlowerColor;
 @RestController
 @RequestMapping("/api/flowers")
 public class FlowerController {
+    private int price = 45;
+    private double sepal = 0.8;
+    
+
     @GetMapping("/list")
-    public List<Flower> getFlowers(){
-        return List.of(new Flower(45, 0.8,FlowerColor.RED));
+    public List<Flower> getFlowers() {
+        return List.of(new Flower(price, sepal, FlowerColor.RED));
     }
 }
