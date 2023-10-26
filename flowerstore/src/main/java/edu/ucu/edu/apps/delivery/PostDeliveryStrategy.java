@@ -1,5 +1,5 @@
 package edu.ucu.edu.apps.delivery;
 
-public class PostDeliveryStrategy extends Delivery{ 
+public class PostDeliveryStrategy extends Delivery { 
     
 }
