@@ -8,8 +8,6 @@ public class BasketDecorater extends ItemDecorator {
         return item.getDecription();
     }
 
-    
-    private int mg;
     public double getPrice() {
         return mg + item.getPrice();
     }
