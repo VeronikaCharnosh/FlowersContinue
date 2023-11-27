@@ -3,9 +3,9 @@ name: Java CI
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
-    branches: [main]
+    branches: [master, main]
 
 jobs:
   build:
@@ -19,9 +19,9 @@ jobs:
           java-version: '15'
           distribution: 'adopt'
       - name: Lint Code Base
-        uses: github/super-linter/slim@v4
+        uses:  github/super-linter/slim@v4
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVA_FILE_NAME: checkstyle.xml
       - name: Test with Maven
